@@ -1,0 +1,38 @@
+/* CSS grid and flex*/
+
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-row: 20px;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.grid2 .video img{
+    margin: 0 auto 20px;
+}
+
+.grid2 .video h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.side_bar > div{
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 700px) {
+    .grid2 {
+        grid-template-columns: 1fr;
+    }
+    .side_bar{
+        display: flex;
+        overflow: scroll;
+    }
+    .side_bar > div{
+        flex: 1 0 200px;
+        margin: 0 10px;
+    }
+}

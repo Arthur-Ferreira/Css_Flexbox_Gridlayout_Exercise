@@ -1,0 +1,33 @@
+/*CSS grid layout*/
+
+.grid3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.item:nth-child(1) {
+    grid-row: 1 / 3;
+    align-self: end;
+}
+
+.item {
+    display: grid;
+}
+
+.item img {
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+
+.item p {
+    background: rgba(0,0,0, .6);
+    padding: 5px;
+    color: white;
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end;
+}
