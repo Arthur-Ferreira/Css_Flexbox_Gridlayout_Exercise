@@ -15,5 +15,15 @@
   "bugs": {
     "url": "https://github.com/Arthur-Ferreira/Css_Flexbox_Gridlayout_Exercise/issues"
   },
-  "homepage": "https://github.com/Arthur-Ferreira/Css_Flexbox_Gridlayout_Exercise#readme"
+  "homepage": "https://github.com/Arthur-Ferreira/Css_Flexbox_Gridlayout_Exercise#readme",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^6.0.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.83.4"
+  },
+  "dependencies": {
+    "gulp-cli": "^3.0.0"
+  }
 }
