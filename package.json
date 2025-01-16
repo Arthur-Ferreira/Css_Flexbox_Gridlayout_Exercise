@@ -1,0 +1,19 @@
+{
+  "name": "css_flexbox_gridlayout_exercise",
+  "version": "2.0.0",
+  "description": "<img alt=\"FlexBox\" src=\"./images/banner.png\"/> <h1 align=\"center\"> Study on Flexbox/Grid Layout </h1>  <p align=\"center\"> <img src=\"https://img.shields.io/badge/CSS-css3-blue\"/> <img src=\"https://img.shields.io/badge/HTML-html5-red\"/> <img src=\"https://img.shields.io/badge/FLEX-FlaxBox-green\"/> <img src=\"https://img.shields.io/badge/GRID-GridLayout-orange\"/> </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arthur-Ferreira/Css_Flexbox_Gridlayout_Exercise.git"
+  },
+  "author": "Arthur Ferreira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arthur-Ferreira/Css_Flexbox_Gridlayout_Exercise/issues"
+  },
+  "homepage": "https://github.com/Arthur-Ferreira/Css_Flexbox_Gridlayout_Exercise#readme"
+}
