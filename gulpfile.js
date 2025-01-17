@@ -15,7 +15,7 @@ gulp.task('htmlmin', function () {
 gulp.task('sass', function () {
     return gulp.src('src/styles/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('build/css'))
+        .pipe(gulp.dest('build/styles'))
         .pipe(browserSync.stream());
 });
 
