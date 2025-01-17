@@ -1,0 +1,40 @@
+/*Grid layout first page*/
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 800px;
+    margin: 0 auto;
+    grid-gap: 20px;
+    padding: 10px;
+
+    &>div:nth-child(n + 4) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        align-items: center;
+    }
+
+    &>div.notice {
+        grid-column: 1;
+        grid-row: 2 / 5;
+        display: block;
+    }
+}
+
+
+@media (max-width:700px) {
+    .grid1 {
+        grid-template-columns: repeat(2, 1fr);
+
+        &>div:nth-child(n + 4) {
+            display: block;
+        }
+
+        &>div.notice {
+            grid-column: auto;
+            grid-row: auto;
+            order: -1;
+        }
+    }
+}
