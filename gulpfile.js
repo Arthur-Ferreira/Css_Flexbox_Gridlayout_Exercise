@@ -3,11 +3,7 @@ const sass = require('gulp-sass')(require('sass'));
 const htmlmin = require('gulp-htmlmin');
 const browserSync = require('browser-sync').create();
 
-async function getImagemin() {
-    const imagemin = await import('gulp-imagemin');
-    return imagemin.default;
-}
-
+// Html Task
 gulp.task('htmlmin', function () {
     return gulp.src('src/**/*.html')
         .pipe(htmlmin({ collapseWhitespace: true }))
@@ -24,12 +20,9 @@ gulp.task('sass', function () {
 });
 
 // Image Optimization Task
-gulp.task('image', async function () {
-    const imagemin = await getImagemin();
+gulp.task('image', function () {
     return gulp.src('src/images/*')
-        .pipe(imagemin())
         .pipe(gulp.dest('build/images'))
-        .pipe(browserSync.stream());
 });
 
 // BrowserSync Task
@@ -41,8 +34,8 @@ gulp.task('serve', function () {
     });
 
     gulp.watch('src/**/*.html', gulp.series('htmlmin')).on('change', browserSync.reload);
-    gulp.watch('src/styles/*.scss', gulp.series('sass'));
-    gulp.watch('src/images/*', gulp.series('image'));
+    gulp.watch('src/styles/*.scss', gulp.series('sass')).on('change', browserSync.reload);
+    gulp.watch('src/images/*', gulp.series('image')).on('change', browserSync.reload);
 });
 
 // Default Task
