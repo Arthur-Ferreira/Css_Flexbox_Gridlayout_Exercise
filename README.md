@@ -1,4 +1,4 @@
-<img alt="FlexBox" src="./images/banner.png"/>
+<img alt="FlexBox" src="./src/images/banner.png"/>
 <h1 align="center"> Study on Flexbox/Grid Layout </h1> 
 <p align="center">
 <img src="https://img.shields.io/badge/CSS-css3-blue"/>
