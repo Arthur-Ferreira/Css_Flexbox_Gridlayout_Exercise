@@ -1,4 +1,4 @@
-const fragment = './views/second_fragment.html';
+const fragment = './views/second.html';
 const mainFirst = document.querySelector('#first');
 const testButton = document.getElementById('test');
 
