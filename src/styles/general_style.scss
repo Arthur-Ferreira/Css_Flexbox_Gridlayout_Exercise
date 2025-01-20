@@ -10,10 +10,6 @@ body {
     margin-bottom: 200px;
 }
 
-a {
-    text-decoration: none;
-    color: #ffffff;
-}
 
 .header {
     background: #000000;
@@ -25,6 +21,18 @@ a {
     align-items: center;
 
     padding: 1rem;
+
+    a {
+        font-size: 2rem;
+        text-decoration: none;
+    }
+
+    a,
+    button {
+        color: #ffffff;
+        display: block;
+        padding: .8rem;
+    }
 }
 
 .menu {
@@ -33,9 +41,18 @@ a {
     li {
         margin-left: .8rem;
 
-        a {
-            display: block;
-            padding: .8rem;
+
+
+        button {
+            cursor: pointer;
+            background-color: transparent;
+            border-radius: 1rem;
+
+            &:hover,
+            &:active {
+                color: #000000;
+                background-color: #ffffff;
+            }
         }
     }
 }
