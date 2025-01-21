@@ -33,23 +33,23 @@ body {
         display: block;
         padding: .8rem;
     }
-}
 
-.menu {
-    display: flex;
+    &__menu {
+        display: flex;
 
-    li {
-        margin-left: .8rem;
+        li {
+            margin-left: .8rem;
 
-        button {
-            cursor: pointer;
-            background-color: transparent;
-            border-radius: 1rem;
+            button {
+                cursor: pointer;
+                background-color: transparent;
+                border-radius: 1rem;
 
-            &:hover,
-            &:active {
-                color: #000000;
-                background-color: #ffffff;
+                &:hover,
+                &:active {
+                    color: #000000;
+                    background-color: #ffffff;
+                }
             }
         }
     }
