@@ -1,15 +1,32 @@
 // Main Section
-const mainFirst = document.querySelector('#first');
+const mainFirst = document.querySelector('#main');
 
 // Fragment Section
+const firstFragment = './views/first.html';
 const secondFragment = './views/second.html';
 const thirdFragment = './views/third.html';
-const forthFragment = './views/forth.html';
 
 // Action Button
-const secondFragmentButton = document.getElementById('secondFragment');
-const thirdFragmentButton = document.getElementById('thirdFragment');
-const forthFragmentButton = document.getElementById('forthFragment');
+const firstFragmentButton = document.getElementById('first-fragment');
+const secondFragmentButton = document.getElementById('second-fragment');
+const thirdFragmentButton = document.getElementById('third-fragment');
+
+
+firstFragmentButton.addEventListener('click', () => {
+    fetch(firstFragment)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Error fetching the file');
+            }
+            return response.text();
+        })
+        .then(html => {
+            mainFirst.innerHTML = html;
+        })
+        .catch(error => {
+            console.error(error);
+        });
+});
 
 
 secondFragmentButton.addEventListener('click', () => {
@@ -31,23 +48,6 @@ secondFragmentButton.addEventListener('click', () => {
 
 thirdFragmentButton.addEventListener('click', () => {
     fetch(thirdFragment)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Error fetching the file');
-            }
-            return response.text();
-        })
-        .then(html => {
-            mainFirst.innerHTML = html;
-        })
-        .catch(error => {
-            console.error(error);
-        });
-});
-
-
-forthFragmentButton.addEventListener('click', () => {
-    fetch(forthFragment)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Error fetching the file');
