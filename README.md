@@ -25,12 +25,12 @@ Before starting, ensure you have the following tools installed on your machine:<
 
 ```bash
 # Clone this repository
-$ git clone <https://github.com/Arthur-Ferreira/Css_Flexbox_Gridlayout_Exercise>
+$ git clone https://github.com/Arthur-Ferreira/Css_Flexbox_Gridlayout_Exercise
 
 # Navigate to the project folder
-$ cd {Your folder name}
+$ cd <Your folder name>
 
-# Install the dependecies
+# Install the dependencies
 $ npm i
 
 # Run the project
@@ -44,11 +44,12 @@ The following tools were used in the construction of the project:
 
 - [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-- Gulp
-- JavaScript
-- Sass
-- AJAX
-- BEM Methodology
+- [Gulp](https://gulpjs.com/)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Sass](https://sass-lang.com/)
+- [AJAX](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX)
+- [BEM Methodology](http://getbem.com/)
+
 
 
 <div align="center"> 
